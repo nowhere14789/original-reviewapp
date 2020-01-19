@@ -1,3 +1,81 @@
-* {
-  box-sizing: border-box;
+.wrapper{
+  display: flex;
+}
+
+.side-a{
+  position: relative;
+  height: 100vh;
+  width: 20vw;
+  border: red solid 1px;
+  margin: 2px;
+  &__user{
+    height: 5vh;
+    width: 19vw;
+    border: black solid 1px;
+    margin: 4px;
+  }
+  &__today-review{
+    height: 10vh;
+    width: 19vw;
+    border: rgb(255, 115, 0) solid 1px;
+    margin: 4px;
+  }
+  &__materials{
+    height: calc(72vh - 4px);
+    &__material{
+      height: 10vh;
+      width: 19vw;
+      border: gray solid 1px;
+      margin: 4px;
+    }
+  }
+  &__new-material{
+    height: 10vh;
+    width: 19vw;
+    border: gray solid 1px;
+    margin: 4px;
+    position: absolute;
+    bottom: 4px
+  }
+}
+
+
+.side-b{
+  height: 100vh;
+  width: 20vw;
+  border: blue solid 1px;
+  margin: 2px 0px;
+  &__new{
+    height: 10vh;
+    width: 19vw;
+    border: black solid 1px;
+    margin: 4px;
+
+  }
+  &__notes{
+    height: 10vh;
+    width: 19vw;
+    border: gray solid 1px;
+    margin: 4px;
+  }
+}
+
+
+.main-note{
+  height: 100vh;
+  width: 60vw;
+  border: green solid 1px;
+  margin: 2px;
+  &__title{
+    height: 8vh;
+    width: 60vw;
+    border: gray solid 1px;
+    margin: 4px;
+  }
+  &__note{
+    height: 90vh;
+    width: 60vw;
+    border: gray solid 1px;
+    margin: 4px;
+  }
 }
