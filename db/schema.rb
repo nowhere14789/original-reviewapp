@@ -19,10 +19,14 @@ ActiveRecord::Schema.define(version: 20200119001548) do
   end
 
   create_table "notes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "material"
     t.string   "title"
-    t.text     "content",     limit: 65535
-    t.date     "date"
+    t.text     "content",     limit: 65535, null: false
+    t.date     "date",                      null: false
+    t.date     "ydate",                     null: false
+    t.boolean  "fdate",                     null: false
+    t.boolean  "sdate",                     null: false
+    t.boolean  "tdate",                     null: false
+    t.boolean  "fodate",                    null: false
     t.integer  "material_id"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false

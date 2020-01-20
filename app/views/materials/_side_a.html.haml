@@ -1,0 +1,20 @@
+.side-a
+  .side-a__user
+    nick ログアウト
+  .side-a__today-review
+    本日の復習
+
+  .side-a__materials
+    = render @materials
+
+
+
+  .side-a__new-material
+    = form_for(@material) do |f|
+      = f.text_field :name ,class: 'material-name' ,placeholder: '新しい教材'
+      = f.submit '追加',class:'btn'
+
+
+
+
+

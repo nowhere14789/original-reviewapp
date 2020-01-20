@@ -22,11 +22,17 @@
   }
   &__materials{
     height: calc(72vh - 4px);
-    &__material{
+    .material{
       height: 10vh;
       width: 19vw;
       border: gray solid 1px;
       margin: 4px;
+      justify-content: space-between;//何故か反映されない、後回し
+      &__delete{
+        background-color: red; //何故か反映されない、後回し
+        height: 2vh;
+        width: 4vw;
+      }
     }
   }
   &__new-material{
@@ -38,6 +44,7 @@
     bottom: 4px
   }
 }
+
 
 
 .side-b{
@@ -66,11 +73,21 @@
   width: 60vw;
   border: green solid 1px;
   margin: 2px;
-  &__title{
-    height: 8vh;
-    width: 60vw;
-    border: gray solid 1px;
-    margin: 4px;
+  &__upper{
+    display: flex;
+    justify-content: space-between;
+    &__title{
+      height: 8vh;
+      width: 40vw;
+      border: gray solid 1px;
+      margin: 4px;
+    }
+    &__btn{
+      height: 8vh;
+      width: 10vw;
+      border: green solid 1px;
+      margin: 4px;
+    }
   }
   &__note{
     height: 90vh;
