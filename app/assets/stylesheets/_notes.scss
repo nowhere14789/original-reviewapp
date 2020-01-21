@@ -4,19 +4,19 @@
 
 .side-a{
   position: relative;
-  height: 100vh;
-  width: 20vw;
+  height: 99vh;
+  width: 15vw;
   border: red solid 1px;
   margin: 2px;
   &__user{
     height: 5vh;
-    width: 19vw;
+    width: 14vw;
     border: black solid 1px;
     margin: 4px;
   }
   &__today-review{
     height: 10vh;
-    width: 19vw;
+    width: 14vw;
     border: rgb(255, 115, 0) solid 1px;
     margin: 4px;
   }
@@ -24,7 +24,7 @@
     height: calc(72vh - 4px);
     .material{
       height: 10vh;
-      width: 19vw;
+      width: 14vw;
       border: gray solid 1px;
       margin: 4px;
       justify-content: space-between;//何故か反映されない、後回し
@@ -37,7 +37,7 @@
   }
   &__new-material{
     height: 10vh;
-    width: 19vw;
+    width: 14vw;
     border: gray solid 1px;
     margin: 4px;
     position: absolute;
@@ -48,20 +48,20 @@
 
 
 .side-b{
-  height: 100vh;
-  width: 20vw;
+  height: 99vh;
+  width: 15vw;
   border: blue solid 1px;
   margin: 2px 0px;
   &__new{
-    height: 10vh;
-    width: 19vw;
+    height: 6vh;
+    width: 14vw;
     border: black solid 1px;
     margin: 4px;
 
   }
   &__notes{
     height: 10vh;
-    width: 19vw;
+    width: 14vw;
     border: gray solid 1px;
     margin: 4px;
   }
@@ -69,8 +69,8 @@
 
 
 .main-note{
-  height: 100vh;
-  width: 60vw;
+  height: 99vh;
+  width: 68vw;
   border: green solid 1px;
   margin: 2px;
   &__upper{
@@ -90,8 +90,8 @@
     }
   }
   &__note{
-    height: 90vh;
-    width: 60vw;
+    height: 88vh;
+    width: 67vw;
     border: gray solid 1px;
     margin: 4px;
   }
