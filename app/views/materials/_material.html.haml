@@ -1,5 +1,6 @@
 .material
-  .material-name
-    = material.name
+  = link_to material_notes_path(material) do
+    .material-name
+      = material.name
   .material-delete
     削除

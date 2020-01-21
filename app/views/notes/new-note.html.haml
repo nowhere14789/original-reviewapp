@@ -1,0 +1,13 @@
+.main-note
+  .main-note__upper
+    .main-note__upper__title
+      = form_for(@note) do |f|
+        = f.text_field :title ,class: 'note-title' ,placeholder: 'title'
+    .main-note__upper__btn
+      = form_for(@note) do |f|
+        = f.submit '完了',class:'btn'
+  .main-note__note
+    = form_for(@note) do |f|
+      = f.text_field :content ,class: 'note-new' ,placeholder: 'text'
+
+//保存用
