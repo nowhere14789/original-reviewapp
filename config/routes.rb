@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :materials, only: :create do
     resources :notes, only:[:index,:create]
   end
+  resources :notes, only: [:index,:create]
 end
+

@@ -1,9 +1,9 @@
 .side-a
   .side-a__user
     nick ログアウト
-  .side-a__today-review
-    本日の復習
-
+  = link_to root_path() do
+    .side-a__today-review
+      本日の復習
   .side-a__materials
     = render partial: 'materials/material', collection: @materials
 

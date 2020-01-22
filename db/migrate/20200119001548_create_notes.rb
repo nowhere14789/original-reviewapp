@@ -3,12 +3,12 @@ class CreateNotes < ActiveRecord::Migration[5.0]
     create_table :notes do |t|
       t.string :title
       t.text :content,null: false
-      t.date :date,null: false
-      t.date :ydate,null: false
-      t.boolean :fdate,null: false
-      t.boolean :sdate,null: false
-      t.boolean :tdate,null: false
-      t.boolean :fodate,null: false
+      t.date :date
+      t.date :ydate
+      t.boolean :fdate,default: false
+      t.boolean :sdate,default: false
+      t.boolean :tdate,default: false
+      t.boolean :fodate,default: false
       t.references :material, foreign_key: true
 
       t.timestamps null: false

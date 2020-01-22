@@ -52,6 +52,22 @@
   width: 15vw;
   border: blue solid 1px;
   margin: 2px 0px;
+  &__reviews{
+    .note{
+      height: 10vh;
+      width: 14vw;
+      border: gray solid 1px;
+      margin: 4px;
+  
+    }
+  }
+}
+
+.side-c{
+  height: 99vh;
+  width: 15vw;
+  border: blue solid 1px;
+  margin: 2px 0px;
   &__new{
     height: 6vh;
     width: 14vw;
@@ -59,11 +75,16 @@
     margin: 4px;
 
   }
-  &__notes{
-    height: 10vh;
+  &__note-list{
+    height: 90vh;
     width: 14vw;
     border: gray solid 1px;
     margin: 4px;
+    .note{
+      height: 10vh;
+      width: 14vw;
+      margin: 4px;
+    }
   }
 }
 
@@ -78,7 +99,7 @@
     justify-content: space-between;
     &__title{
       height: 8vh;
-      width: 40vw;
+      width: 55vw;
       border: gray solid 1px;
       margin: 4px;
     }

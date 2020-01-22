@@ -1,10 +1,3 @@
 .side-b
-  .side-b__new
-    (新規作成)
-  .side-b__notes
-    タイトル1
-  .side-b__notes
-    タイトル2
-  .side-b__notes
-    タイトル3
-    
+  .side-b__reviews
+    = render partial: 'materials/review', collection: @reviews

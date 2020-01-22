@@ -1,0 +1,6 @@
+.main-note
+  .main-note__upper
+    = form_for [@material_id,@note] do |f|
+      = f.text_field :title ,class: 'main-note__upper__title' ,placeholder: 'title'
+      = f.submit "完了" ,class:'main-note__upper__btn'
+      =f.text_area :content ,class: 'main-note__note' ,placeholder: '勉強内容'
